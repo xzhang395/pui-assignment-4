@@ -89,9 +89,11 @@ html {
     transition: background-color 0.5s;
     cursor: pointer;
 }
-.button:hover{
+
+.button:hover {
     background: #FFEE13;
 }
+
 .button img {
     margin-left: 16px;
 }
@@ -375,7 +377,8 @@ h2 {
     margin: 60px auto 30px auto;
     text-align: center;
 }
-.recmd{
+
+.recmd {
     text-align: center;
 }
 
@@ -430,7 +433,10 @@ textarea {
     max-width: 1200px;
     margin: auto;
 }
+
+
 /* saved in cart */
+
 .container-saved {
     max-width: 1200px;
     margin: auto;
@@ -477,7 +483,7 @@ textarea {
 .badge {
     background-color: rgb(255, 238, 19);
     border-radius: 10px;
-    color:#222;
+    color: #222;
     display: inline-block;
     font-size: 12px;
     line-height: 1;
@@ -487,95 +493,103 @@ textarea {
     white-space: nowrap;
 }
 
+
 /*move the divider to below the titles*/
-#divide{
+
+#divide {
     transform: translateY(60px);
 }
 
-.totals{
+.totals {
     display: flex;
     justify-content: flex-end;
 }
 
+
 /*items table style*/
-  .fleft{
+
+.fleft {
     float: left;
-  }
-  .divideunder{
-      margin-top:-10px; 
-  }
-  
-  .fright{
+}
+
+.divideunder {
+    margin-top: -10px;
+}
+
+.fright {
     float: right;
-  }
-  
-  .bd{
+}
+
+.bd {
     border: 1px solid #B6B6AB;
-    border-radius: 4px; 
-  }
-  
-  .qty{
+    border-radius: 4px;
+}
+
+.qty {
     outline: none;
     width: 50px;
     padding: 2px;
-  }
-  
-  .remove{
+}
+
+.remove {
     font-size: 30px;
-    color:#CCCCCC;
+    color: #CCCCCC;
     margin: auto;
     cursor: pointer;
-  }
-  
-  .remove:hover{
+}
+
+.remove:hover {
     color: #f47676;
-  }
-  
-  .cart{
+}
+
+.cart {
     border-spacing: 10px;
     margin: 0 auto;
     padding: 0 10px 0 10px;
     margin-bottom: 10px;
-  }
-  
-  .cart td{
+}
+
+.cart td {
     padding: 5px;
     min-width: 70px;
     text-align: left;
-  }
-  
-  .cart thead{
+}
+
+.cart thead {
     line-height: 2em;
     color: #555;
     text-align: left;
-  }
-  
-  .cart th{
+}
+
+.cart th {
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 5px;
-  }
-  
-  td.numCell, th.numCell{
-    text-align: right;
-  }
-  
-  td.center{
-    text-align: center;
-  }
+}
 
-  tr{
-    vertical-align:top;
-  }
-  .customize{
-      font-size: 12px;
-      margin-left:10px; 
-  }
-  .message{
+td.numCell, th.numCell {
+    text-align: right;
+}
+
+td.center {
+    text-align: center;
+}
+
+tr {
+    vertical-align: top;
+}
+
+.customize {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.message {
     color: #9B9B9B;
     cursor: pointer;
-  }
-  .message:hover{
+}
+
+.message:hover {
     color: #222;
-  }
+}
