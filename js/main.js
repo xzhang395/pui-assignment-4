@@ -230,7 +230,7 @@ $(document).ready(function () {
     var w = tempsize[1];
     //change content on detail page dynamically
     $(".detail").append(
-        "<div class='detailleft'><img src='" + "img/" + data[vieweditem].pic + "_white" + ".jpg" + "' width='100%' ></div><div class='detailright'><h1>" + data[vieweditem].name + "</h1><h2>$15</h2><div id='options'>"
+        "<div class='detailleft'><img src='" + "img/" + data[vieweditem].pic + "_white" + ".jpg" + "' width='100%' ></div><div class='detailright'><h1>" + data[vieweditem].name + "</h1><h2>$"+data[vieweditem].price+"</h2><div id='options'>"
         + " <select name='' id='color'><option value='white'>white</option><option value='blue'>blue</option></select>"
         + "<div id='option-spacing'><select name='' id='size'><option value=1>small</option><option value=2>large</option></select></div><div id='option-spacing'>Qty<select name='' id='qty'>" + quantity + "</select></div><br/>"
         + "<p class='note'>*You can add customization message when check out</p></div><div><div class='button addtocart'>Add to cart</div>"
