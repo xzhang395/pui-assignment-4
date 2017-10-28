@@ -207,6 +207,12 @@ $(document).ready(function () {
             "<div class='gallery'><a class='viewbutton' id='" + i + "' href='detail.html'><div class='container'><img src='" + "img/" + data[i].pic + "_white" + ".jpg" + "'><div class='middle'><div class='text'>View</div></div></div></a><div class='desc'>" + data[i].name + "<br><h7>" + "$" + data[i].price + "</h7></div></div>"
         );
     };
+    //show all items from data
+    for (var i = 0; i < 4; i++) {
+        $(".recmd").append(
+            "<div class='gallery'><a class='viewbutton' id='" + i + "' href='detail.html'><div class='container'><img src='" + "img/" + data[i].pic + "_white" + ".jpg" + "'><div class='middle'><div class='text'>View</div></div></div></a><div class='desc'>" + data[i].name + "<br><h7>" + "$" + data[i].price + "</h7></div></div>"
+        );
+    };
     //Update product detail page when click on view
     $(document).on('click', '.viewbutton', function () {
         var index = Number(this.id);
