@@ -345,20 +345,12 @@ $(document).ready(function () {
             var price = data[vieweditem].price * sizescale;
             var index = vieweditem;
             saveItem(index, picture, name, price);
-            // console.log("save");
         } else {
-            // console.log("unsave");
-            // console.log("issaved?" + isSaved);
             var indexinsaved = jQuery.inArray(vieweditem, arrNames);
-            // alert(indexinsaved);
             undosaveItem(indexinsaved);
         }
         location.reload();//reload page to update view
-        // console.log(JSON.parse(localStorage.getItem("savedItems")));
-        // console.log(jQuery.inArray(vieweditem, arrNames));
     })
-    console.log(JSON.parse(localStorage.getItem("savedItems")));
-
     if (jQuery.inArray(vieweditem, arrNames) !== -1) {
         $("#heart").css("fill", "#f47676");//change style of the save button
     }
@@ -366,12 +358,11 @@ $(document).ready(function () {
     //show svaed items in shopping cart page
     for (var i = 0; i < saved.length; i++) {
         $(".container-saved").append(
-            "<div id='"+saved[i].picture+"' class='gallery'><a class='viewSaved' id='" + i + "' href='detail.html'><div class='container'><img src='" + "img/" + saved[i].picture + "_white" + ".jpg" + "'><div class='middle'><div class='text'>View</div></div></div></a><div class='desc'>" + saved[i].name + "<br><h7>" + "$" + saved[i].price + "</h7></div></div>"
+            "<div id=" + saved[i].picture + " class='gallery'><a class='viewSaved' id='" + i + "' href='detail.html'><div class='container'><img src='" + "img/" + saved[i].picture + "_white" + ".jpg" + "'><div class='middle'><div class='text'>View</div></div></div></a><div class='desc'>" + saved[i].name + "<br><h7>" + "$" + saved[i].price + "</h7></div></div>"
         );
     };
-    $(document).on('click', '.viewSaved', function () {
-        var i = Number(this.parent().id);
-        localStorage.setItem('clicked', i);
-        alert("view saved");
-    });
+
+    $(".viewSaved").click(function () {
+        alert(Number(this.parent().id))
+    })
 });
